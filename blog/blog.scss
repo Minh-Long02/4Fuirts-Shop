@@ -1,0 +1,233 @@
+.container {
+  margin: 0 auto;
+  width: 1170px;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+$headerTopUP: #ffffff;
+header {
+  .header-top {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .portion-upper {
+      background-color: rgba(#222, 0.9);
+      padding: 25px 0;
+      .container {
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        .header-left {
+          .wrapper-nav-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .nav-main {
+              margin: 0 10px;
+              .nav-link-main {
+                padding: 10px 0;
+                font-size: 16px;
+                text-transform: uppercase;
+                color: #a8a8a9;
+                position: relative;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  bottom: 0;
+                  right: 0;
+                  width: 0;
+                  height: 2px;
+                  background-color: #fff;
+                  transition: 0.3s;
+                }
+                &:hover {
+                  color: #fff;
+                  &::after {
+                    left: 0;
+                    width: 100%;
+                  }
+                }
+                i {
+                  font-size: 10px;
+                }
+              }
+              &.active-nav-main {
+                .nav-link-main {
+                  color: #fff;
+                  &::after {
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                  }
+                }
+              }
+            }
+            .drop-down {
+              position: relative;
+              &:hover {
+                .shop-down {
+                  opacity: 1;
+                  visibility: visible;
+                }
+              }
+              .shop-down {
+                background-color: #ffffff;
+                position: absolute;
+                top: calc(100% + 10px);
+                right: 0;
+                transform: translate(50px);
+                transition: 0.3s;
+                opacity: 0;
+                visibility: hidden;
+                border: 1px rgba(#666666, 0.2) solid;
+                max-width: 250px;
+                .product-categories {
+                  width: 100%;
+                  flex: 1;
+                  border-right: 1px rgba(#666666, 0.2) solid;
+                  h2 {
+                    width: 100%;
+                    font-size: 16px;
+                    font-weight: 700;
+                    padding: 30px 30px;
+                    white-space: nowrap;
+                    color: #666666;
+                    border-bottom: 1px #666666 solid;
+                  }
+                  ul {
+                    li {
+                      width: 100%;
+                      a {
+                        width: 100%;
+                        border-top: 1px rgba(#666666, 0.3) solid;
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #666666;
+                        padding: 15px 20px;
+                        transition: 0.2s;
+                        &:hover {
+                          background-color: #3a3939;
+                          color: $headerTopUP;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .header-middle {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          z-index: 11;
+          .icon-home {
+            transform: translate(-50%, 10px);
+            a {
+              position: relative;
+              background-color: rgba(255, 255, 255, 0.75);
+              transition: 0.3s;
+              width: 120px;
+              height: 120px;
+              display: inline-block;
+              border-radius: 50%;
+              cursor: pointer;
+              img {
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+                width: 128%;
+                height: 128%;
+              }
+            }
+          }
+        }
+        .header-right {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .cart {
+            cursor: pointer;
+            position: relative;
+            .cart-icon {
+              font-size: 24px;
+              color: #a8a8a9;
+            }
+            .quantity {
+              color: #ffffff;
+              position: absolute;
+              width: 18px;
+              height: 18px;
+              background-color: #ea1616;
+              font-size: 12px;
+              bottom: 70%;
+              left: 70%;
+              border-radius: 50%;
+              text-align: center;
+              line-height: 18px;
+            }
+          }
+          .info {
+            font-size: 14px;
+            padding: 3px 15px;
+            margin: 0 25px;
+            border-left: 1px #a8a8a9 solid;
+            border-right: 1px #a8a8a9 solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icon-info {
+              width: 27px;
+              height: 27px;
+              cursor: pointer;
+              background-color: #a8a8a9;
+              border-radius: 50%;
+              text-align: center;
+              i {
+                line-height: 27px;
+                color: #ffffff;
+                transition: 0.3s;
+              }
+            }
+            .facebook {
+              margin-right: 15px;
+              transition: 0.3s;
+              &:hover {
+                background-color: #3b5998;
+                i {
+                  color: $headerTopUP;
+                }
+              }
+            }
+            .twitter {
+              transition: 0.3s;
+              &:hover {
+                background-color: #55acee;
+                i {
+                  color: $headerTopUP;
+                }
+              }
+            }
+          }
+
+          .user {
+            i {
+              font-size: 24px;
+              line-height: 24px;
+              cursor: pointer;
+              color: #a8a8a9;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,MADI,CACJ,cAAc,CAAC;EACb,OAAO,EAAE,iBAAiB;CAC3B;;AAHH,AAIE,MAJI,CAIJ,cAAc,CAAC;EACb,SAAS,EAAE,qBAAqB;EAChC,UAAU,EAAE,IAAI;CAQjB;;AAdH,AAOI,MAPE,CAIJ,cAAc,CAGZ,UAAU,CAAC;EACT,SAAS,EAAE,YAAY,CAAC,UAAU;CAKnC;;AAbL,AASM,MATA,CAIJ,cAAc,CAGZ,UAAU,CAER,CAAC,CAAC;EACA,KAAK,EAAE,gBAAgB;EACvB,MAAM,EAAE,gBAAgB;CACzB",
+    "sources": [
+        "../../setHeader.scss"
+    ],
+    "names": [],
+    "file": "setHeader.css"
+}

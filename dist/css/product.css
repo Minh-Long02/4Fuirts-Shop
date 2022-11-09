@@ -1,0 +1,290 @@
+.product-page {
+  position: relative;
+  background: rgba(34, 34, 34, 0.9);
+  background-position: 0 0;
+  background-repeat: repeat;
+  font-size: 16px;
+  padding-bottom: 50px;
+}
+
+.container .products .product-menu {
+  position: relative;
+  padding-top: 50px;
+  height: 300px;
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+}
+
+.container .products .product-menu .wellcome {
+  margin: 10px 10px 40px;
+}
+
+.container .products .product-menu .wellcome p {
+  font-size: 24px;
+  font-weight: 200;
+  color: white;
+}
+
+.container .products .product-menu .wellcome strong {
+  color: #db291c;
+}
+
+.container .products .product-menu .wellcome h2 {
+  font-size: 60px;
+  font-weight: 200;
+  color: white;
+}
+
+.container .products .product-menu .menu-options {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  bottom: 20px;
+}
+
+.container .products .product-menu .menu-options ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.container .products .product-menu .menu-options ul li {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(100% / 6);
+  height: 50px;
+}
+
+.container .products .product-menu .menu-options ul li span {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 300;
+  width: 60%;
+  height: 50px;
+  border: 1px solid white;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+.container .products .product-menu .menu-options ul li span::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 100%;
+  height: 60px;
+  bottom: -100%;
+  left: 0%;
+  background-color: rgba(255, 255, 255, 0.25);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container .products .product-menu .menu-options ul li span:hover::after {
+  opacity: 1;
+  bottom: 0%;
+}
+
+.container .products .product-menu .menu-options ul li span.active {
+  background-color: white;
+  color: black;
+}
+
+.container .products .product-card {
+  width: 100%;
+}
+
+.container .products .product-card .cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .products .product-card .cards .card {
+  width: calc(100% / 4);
+  padding: 20px;
+}
+
+.container .products .product-card .cards .card .card-content {
+  border-radius: 5px;
+  width: 100%;
+  height: 310px;
+  overflow: hidden;
+  background-color: black;
+}
+
+.container .products .product-card .cards .card .card-content .img {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  position: relative;
+  left: 50%;
+  width: 100%;
+  height: 240px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.container .products .product-card .cards .card .card-content .img:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.container .products .product-card .cards .card .card-content .img img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container .products .product-card .cards .card .card-content .details {
+  width: 100%;
+  height: 70px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.container .products .product-card .cards .card .card-content .details .name-price {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 82.5%;
+  font-size: 14px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container .products .product-card .cards .card .card-content .details .name-price .name {
+  font-size: 13px;
+}
+
+.container .products .product-card .cards .card .card-content .details .name-price .name,
+.container .products .product-card .cards .card .card-content .details .name-price .price {
+  display: inline-block;
+}
+
+.container .products .product-card .cards .card .card-content .details button {
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.container .products .product-card .cards .card .card-content .details button i {
+  margin-right: 10px;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container .products .product-card .cards .card .card-content .details button:hover i {
+  color: #ff4d40;
+}
+
+.modal-wrapper {
+  display: none;
+  background: rgba(0, 0, 0, 0.66);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.modal-wrapper .modal {
+  width: 100%;
+  max-width: 532px;
+  margin: 16px;
+  background: #fff;
+  position: relative;
+  border-radius: 4px;
+}
+
+.modal-wrapper .modal button {
+  cursor: pointer;
+  position: absolute;
+  height: 36px;
+  text-align: center;
+  border: 0;
+  font-weight: 400;
+  padding: 0 16px;
+  font-family: inherit;
+  top: 0;
+  right: 0;
+  font-size: 28px;
+  line-height: 36px;
+  border-radius: 0 4px 0 0;
+  background: transparent;
+  color: black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.modal-wrapper .modal button:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.modal-wrapper .quick-view .quickview-image img {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 4px 4px 0 0;
+}
+
+.modal-wrapper .quick-view .quickview-details {
+  padding: 24px;
+  background: #898989;
+  border-radius: 0 0 4px 4px;
+  font-size: 20px;
+  color: white;
+}
+
+.modal-wrapper .quick-view .quickview-details span.product-price {
+  color: #02ff20;
+  font-weight: 700;
+  font-size: 24px;
+  float: right;
+}
+
+.modal-wrapper.active {
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+}
+/*# sourceMappingURL=product.css.map */

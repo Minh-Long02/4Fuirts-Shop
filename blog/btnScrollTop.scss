@@ -1,0 +1,31 @@
+.action-scroll {
+  z-index: 1000;
+  position: relative;
+  .btn-to-top {
+    transition: all 0.5s;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    text-align: center;
+    .scroll-top {
+      i {
+        line-height: 50px;
+        color: #666666;
+        font-size: 24px;
+      }
+    }
+  }
+  .action-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+  }
+}

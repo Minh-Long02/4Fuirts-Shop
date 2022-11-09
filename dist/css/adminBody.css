@@ -1,0 +1,436 @@
+.body {
+  width: 100%;
+}
+
+.body .product-page {
+  padding: 110px 40px 0px;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#609799), color-stop(#6d987e), color-stop(#8e9366), color-stop(#b18862), to(#c77c7c));
+  background-image: linear-gradient(to bottom, #609799, #6d987e, #8e9366, #b18862, #c77c7c);
+  background-position: 0 0;
+  background-repeat: repeat;
+  font-size: 16px;
+  padding-bottom: 50px;
+}
+
+.body .product-page .products .product-menu {
+  position: relative;
+  padding-top: 50px;
+  height: 300px;
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+}
+
+.body .product-page .products .product-menu .wellcome {
+  margin: 10px 10px 40px;
+}
+
+.body .product-page .products .product-menu .wellcome p {
+  font-size: 24px;
+  font-weight: 200;
+  color: white;
+}
+
+.body .product-page .products .product-menu .wellcome strong {
+  color: #db291c;
+}
+
+.body .product-page .products .product-menu .wellcome h2 {
+  font-size: 60px;
+  font-weight: 200;
+  color: white;
+}
+
+.body .product-page .products .product-menu .menu-options {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  bottom: 20px;
+}
+
+.body .product-page .products .product-menu .menu-options ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.body .product-page .products .product-menu .menu-options ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(100% / 6);
+  height: 50px;
+}
+
+.body .product-page .products .product-menu .menu-options ul li span {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 300;
+  width: 60%;
+  height: 50px;
+  border: 1px solid white;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+.body .product-page .products .product-menu .menu-options ul li span::after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 60px;
+  bottom: -100%;
+  left: 0%;
+  background-color: rgba(255, 255, 255, 0.25);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.body .product-page .products .product-menu .menu-options ul li span:hover::after {
+  opacity: 1;
+  bottom: 0%;
+}
+
+.body .product-page .products .product-menu .menu-options ul li span.active {
+  background-color: white;
+  color: black;
+}
+
+.body .product-page .products .product-card {
+  width: 100%;
+}
+
+.body .product-page .products .product-card .cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.body .product-page .products .product-card .cards .card {
+  width: calc(100% / 5);
+  padding: 20px;
+}
+
+.body .product-page .products .product-card .cards .card .card-content {
+  border-radius: 5px;
+  width: 100%;
+  height: 310px;
+  overflow: hidden;
+  background-color: black;
+}
+
+.body .product-page .products .product-card .cards .card .card-content .img {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  position: relative;
+  left: 50%;
+  width: 100%;
+  height: 240px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.body .product-page .products .product-card .cards .card .card-content .img:hover .details {
+  opacity: 0.7;
+}
+
+.body .product-page .products .product-card .cards .card .card-content .img img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.body .product-page .products .product-card .cards .card .card-content .img .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #fff;
+  text-align: center;
+}
+
+.body .product-page .products .product-card .cards .card .card-content .img .details span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.body .product-page .products .product-card .cards .card .card-content .group-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.body .product-page .products .product-card .cards .card .card-content .group-button #buttonEdit:hover {
+  background-color: #1883ca;
+}
+
+.body .product-page .products .product-card .cards .card .card-content .group-button #buttonDelete:hover {
+  background-color: #c5152c;
+}
+
+.body .product-page .products .product-card .cards .card .card-content .group-button #buttonEdit,
+.body .product-page .products .product-card .cards .card .card-content .group-button #buttonDelete {
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid black;
+  border-radius: 5px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.admin-input {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.admin-input .box-edit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 800px;
+  height: 400px;
+  border-radius: 14px;
+  background-color: #fff;
+}
+
+.admin-input .box-edit .left-content {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 60%;
+  height: 100%;
+  border-right: 2px solid black;
+  padding: 20px 15px 20px 20px;
+}
+
+.admin-input .box-edit .left-content span#title {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.admin-input .box-edit .left-content form {
+  width: 100%;
+  height: 70%;
+}
+
+.admin-input .box-edit .left-content form .group-input {
+  position: relative;
+  width: 100%;
+  height: 25%;
+}
+
+.admin-input .box-edit .left-content form .group-input label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.admin-input .box-edit .left-content form .group-input input,
+.admin-input .box-edit .left-content form .group-input select {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 0px 6px;
+  width: 60%;
+  height: 30px;
+  background-color: #fff;
+  border: 2px solid black;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.admin-input .box-edit .left-content .group-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 10px;
+  padding-left: 35%;
+  width: 100%;
+  height: 18%;
+}
+
+.admin-input .box-edit .left-content .group-button #btnCancel {
+  cursor: pointer;
+  width: 40%;
+  height: 35px;
+  border-radius: 14px;
+  color: #fff;
+  background-color: #ca1818;
+  border: 2px solid #333;
+}
+
+.admin-input .box-edit .left-content .group-button #btnCancel:hover {
+  background-color: #d63b3b;
+}
+
+.admin-input .box-edit .left-content .group-button #btnApply {
+  cursor: pointer;
+  width: 40%;
+  height: 35px;
+  border-radius: 14px;
+  color: #fff;
+  background-color: #18ca53;
+  border: 2px solid #333;
+}
+
+.admin-input .box-edit .left-content .group-button #btnApply:hover {
+  background-color: #3bd66f;
+}
+
+.admin-input .box-edit .right-content {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 40%;
+  height: 100%;
+}
+
+.admin-input .box-edit .right-content .card {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90%;
+  padding: 20px;
+}
+
+.admin-input .box-edit .right-content .card .card-content {
+  border-radius: 5px;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background-color: black;
+}
+
+.admin-input .box-edit .right-content .card .card-content .img {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  position: relative;
+  left: 50%;
+  width: 100%;
+  height: 240px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.admin-input .box-edit .right-content .card .card-content .img:hover .details {
+  opacity: 0.7;
+}
+
+.admin-input .box-edit .right-content .card .card-content .img img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.admin-input .box-edit .right-content .card .card-content .img .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #fff;
+  text-align: center;
+}
+
+.admin-input .box-edit .right-content .card .card-content .img .details span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.admin-input .box-edit .right-content #btnComplete {
+  cursor: pointer;
+  position: absolute;
+  bottom: 4.5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40%;
+  height: 35px;
+  border-radius: 14px;
+  color: #fff;
+  background-color: #18ca53;
+  border: 2px solid #333;
+}
+
+.admin-input .box-edit .right-content #btnComplete:hover {
+  background-color: #3bd66f;
+}
+/*# sourceMappingURL=adminBody.css.map */

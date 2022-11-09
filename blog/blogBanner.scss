@@ -1,0 +1,299 @@
+.blog-banner {
+  z-index: 1;
+  background-image: url("https://ambrosiamagazine.com/wp-content/uploads/2021/01/Fruit-Vegetables-Exports-GreekFoodNews.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-family: "Great Vibes", cursive;
+    font-size: 120px;
+    font-weight: 400;
+    color: #fff;
+  }
+}
+
+.title {
+  .container {
+    padding: 95px 0;
+
+    .page-title {
+      text-align: center;
+
+      h2 {
+        font-size: 70px;
+        font-weight: 400;
+      }
+
+      .page-title-param {
+        display: flex;
+        justify-content: center;
+        margin: 40px 0;
+
+        p {
+          max-width: 60%;
+          font-size: 15px;
+        }
+      }
+    }
+
+    .row {
+      display: flex;
+
+      .left {
+        margin-right: 20px;
+        width: 75%;
+
+        .article {
+          background-color: rgba(#eaeaea, 1);
+          margin-bottom: 20px;
+          color: #686868;
+
+          a {
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .left-header {
+            position: relative;
+
+            // height: 600px;
+            .fa-image {
+              position: absolute;
+              top: 0px;
+              left: 20px;
+              font-size: 35px;
+            }
+
+            h2 {
+              margin: 15px 65px 10px 65px;
+              font-size: 35px;
+              font-weight: 300;
+              color: #4d4d4d;
+              font-family: "Vidaloka", serif;
+            }
+
+            .post-meta {
+              display: flex;
+              margin: 0 65px;
+
+              .meta-list {
+                position: none;
+                margin-right: 15px;
+
+                i {
+                  margin-right: 3px;
+                  font-size: 15px;
+                }
+
+                a {
+                  color: #ff6363;
+                  font-size: 15px;
+                  font-weight: 550;
+
+                  &:hover {
+                    color: #4d4d4d;
+                  }
+                }
+              }
+            }
+
+            .entry-content {
+              padding: 22px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+
+      footer {
+        display: flex;
+        justify-content: space-between;
+        color: #686868;
+
+        .social-link {
+          display: flex;
+          margin: 0px 20px 22px 20px;
+
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: solid 1px #686868;
+            margin: 0 5px;
+            transition: 0.5s;
+
+            i {
+              color: #686868;
+              font-size: 20px;
+              transition: 0.5s;
+            }
+
+            &:hover {
+              border: 1px solid black;
+
+              i {
+                color: black;
+              }
+            }
+          }
+        }
+
+        .read-more {
+          width: 120px;
+          height: 40px;
+          background-color: #ff6363;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 22px;
+          border-radius: 8px;
+          transition: 0.5s;
+
+          a {
+            color: #fff;
+          }
+
+          &:hover {
+            background-color: #fb582f;
+          }
+        }
+      }
+
+      .right {
+        padding-left: 10px;
+        width: 24%;
+
+        .search {
+          height: 40px;
+          border: 1px solid #686868;
+          border-radius: 2px;
+          display: flex;
+          // justify-content: center;
+          align-items: center;
+          padding: 10px;
+          position: relative;
+          margin: 0 0 25px 0;
+        }
+
+        i {
+          position: absolute;
+          right: 5px;
+          cursor: pointer;
+        }
+
+        .populer-post {
+          border: 1px solid #686868;
+          border-radius: 2px;
+          padding: 10px;
+          font-size: 15px;
+
+          h5 {
+            font-size: 17px;
+            margin: 15px 10px 10px 10px;
+            font-weight: 400;
+          }
+
+          .short-post {
+            display: flex;
+
+            .image {
+              width: 75px;
+              height: 75px;
+              border-radius: 50%;
+              overflow: hidden;
+              margin: 10px;
+
+              img {
+                width: 75px;
+                height: 75px;
+              }
+            }
+
+            a {
+              width: 135px;
+              margin: 10px 0 10px 10px;
+            }
+          }
+
+          .no-thuml {
+            a {
+              width: 150px;
+            }
+          }
+        }
+
+        .twitter {
+          padding: 10px;
+          border: 1px solid #686868;
+          border-radius: 2px;
+          margin-top: 25px;
+
+          h5 {
+            font-size: 17px;
+            margin: 15px 10px 20px 10px;
+            font-weight: 400;
+          }
+
+          ul {
+            li {
+              font-size: 15px;
+              margin: 10px;
+              padding-left: 30px;
+              position: relative;
+
+              i {
+                content: "\f099";
+                position: absolute;
+                top: 5px;
+                left: 0;
+                font-size: 20px;
+                color: #747474;
+              }
+            }
+          }
+        }
+
+        .tag-cloud {
+          border: 1px solid #686868;
+          border-radius: 2px;
+          padding: 20px;
+          margin-top: 25px;
+
+          h5 {
+            font-size: 17px;
+            margin: 5px 10px 20px 0px;
+            font-weight: 400;
+          }
+
+          a {
+            display: inline-block;
+            border: 1px solid #686868;
+            border-radius: 2px;
+            padding: 10px 15px;
+            margin: 0 10px 10px 0px;
+            color: #888787;
+            transition: 1s;
+
+            &:hover {
+              background-color: #4d4d4d;
+              color: #eaeaea;
+            }
+          }
+        }
+      }
+    }
+  }
+}

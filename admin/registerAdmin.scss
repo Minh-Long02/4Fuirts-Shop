@@ -1,0 +1,99 @@
+.handle-register {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  .wrapper-register {
+    max-width: 500px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    .taplist {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 25px;
+      button {
+        font-weight: 700;
+        transition: 0.3s;
+        cursor: pointer;
+        font-size: 30px;
+        color: #f0932b;
+      }
+    }
+    .similer {
+      width: 100%;
+      .form-similer {
+        input {
+          display: block;
+          width: 100%;
+          height: 43px;
+          border: 1px #f0932b solid;
+          padding-left: 15px;
+          border-radius: 3px;
+          margin-bottom: 15px;
+          &:focus {
+            &::placeholder {
+              opacity: 0;
+            }
+          }
+          &::placeholder {
+            color: #666;
+            transition: 0.3s;
+          }
+        }
+        .input-show-pass {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: 1px #f0932b solid;
+          margin-bottom: 15px;
+          height: 43px;
+          border-radius: 3px;
+          input {
+            margin: 0;
+            border: none;
+          }
+          .show-pass {
+            width: 42px;
+            height: 43px;
+            text-align: center;
+            cursor: pointer;
+            i {
+              width: 100%;
+              line-height: 43px;
+            }
+          }
+        }
+      }
+
+      .btn-submit {
+        cursor: pointer;
+        width: 100%;
+        a {
+          width: 100%;
+          height: 43px;
+          background-color: #f0932b;
+          color: #ffffff;
+          line-height: 43px;
+          font-weight: 700;
+          display: block;
+        }
+        border-radius: 2px;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+.show-register {
+  opacity: 1;
+  visibility: visible;
+}

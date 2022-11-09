@@ -1,0 +1,333 @@
+.blog-banner {
+  z-index: 1;
+  background-image: url("https://ambrosiamagazine.com/wp-content/uploads/2021/01/Fruit-Vegetables-Exports-GreekFoodNews.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog-banner h3 {
+  font-family: "Great Vibes", cursive;
+  font-size: 120px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.title .container {
+  padding: 95px 0;
+}
+
+.title .container .page-title {
+  text-align: center;
+}
+
+.title .container .page-title h2 {
+  font-size: 70px;
+  font-weight: 400;
+}
+
+.title .container .page-title .page-title-param {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0;
+}
+
+.title .container .page-title .page-title-param p {
+  max-width: 60%;
+  font-size: 15px;
+}
+
+.title .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.title .container .row .left {
+  margin-right: 20px;
+  width: 75%;
+}
+
+.title .container .row .left .article {
+  background-color: #eaeaea;
+  margin-bottom: 20px;
+  color: #686868;
+}
+
+.title .container .row .left .article a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.title .container .row .left .article .left-header {
+  position: relative;
+}
+
+.title .container .row .left .article .left-header .fa-image {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  font-size: 35px;
+}
+
+.title .container .row .left .article .left-header h2 {
+  margin: 15px 65px 10px 65px;
+  font-size: 35px;
+  font-weight: 300;
+  color: #4d4d4d;
+  font-family: "Vidaloka", serif;
+}
+
+.title .container .row .left .article .left-header .post-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 65px;
+}
+
+.title .container .row .left .article .left-header .post-meta .meta-list {
+  position: none;
+  margin-right: 15px;
+}
+
+.title .container .row .left .article .left-header .post-meta .meta-list i {
+  margin-right: 3px;
+  font-size: 15px;
+}
+
+.title .container .row .left .article .left-header .post-meta .meta-list a {
+  color: #ff6363;
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.title .container .row .left .article .left-header .post-meta .meta-list a:hover {
+  color: #4d4d4d;
+}
+
+.title .container .row .left .article .left-header .entry-content {
+  padding: 22px;
+  font-size: 15px;
+}
+
+.title .container .row footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #686868;
+}
+
+.title .container .row footer .social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 20px 22px 20px;
+}
+
+.title .container .row footer .social-link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 1px #686868;
+  margin: 0 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.title .container .row footer .social-link a i {
+  color: #686868;
+  font-size: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.title .container .row footer .social-link a:hover {
+  border: 1px solid black;
+}
+
+.title .container .row footer .social-link a:hover i {
+  color: black;
+}
+
+.title .container .row footer .read-more {
+  width: 120px;
+  height: 40px;
+  background-color: #ff6363;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 22px;
+  border-radius: 8px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.title .container .row footer .read-more a {
+  color: #fff;
+}
+
+.title .container .row footer .read-more:hover {
+  background-color: #fb582f;
+}
+
+.title .container .row .right {
+  padding-left: 10px;
+  width: 24%;
+}
+
+.title .container .row .right .search {
+  height: 40px;
+  border: 1px solid #686868;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  position: relative;
+  margin: 0 0 25px 0;
+}
+
+.title .container .row .right i {
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+}
+
+.title .container .row .right .populer-post {
+  border: 1px solid #686868;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.title .container .row .right .populer-post h5 {
+  font-size: 17px;
+  margin: 15px 10px 10px 10px;
+  font-weight: 400;
+}
+
+.title .container .row .right .populer-post .short-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.title .container .row .right .populer-post .short-post .image {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.title .container .row .right .populer-post .short-post .image img {
+  width: 75px;
+  height: 75px;
+}
+
+.title .container .row .right .populer-post .short-post a {
+  width: 135px;
+  margin: 10px 0 10px 10px;
+}
+
+.title .container .row .right .populer-post .no-thuml a {
+  width: 150px;
+}
+
+.title .container .row .right .twitter {
+  padding: 10px;
+  border: 1px solid #686868;
+  border-radius: 2px;
+  margin-top: 25px;
+}
+
+.title .container .row .right .twitter h5 {
+  font-size: 17px;
+  margin: 15px 10px 20px 10px;
+  font-weight: 400;
+}
+
+.title .container .row .right .twitter ul li {
+  font-size: 15px;
+  margin: 10px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.title .container .row .right .twitter ul li i {
+  content: "\f099";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  font-size: 20px;
+  color: #747474;
+}
+
+.title .container .row .right .tag-cloud {
+  border: 1px solid #686868;
+  border-radius: 2px;
+  padding: 20px;
+  margin-top: 25px;
+}
+
+.title .container .row .right .tag-cloud h5 {
+  font-size: 17px;
+  margin: 5px 10px 20px 0px;
+  font-weight: 400;
+}
+
+.title .container .row .right .tag-cloud a {
+  display: inline-block;
+  border: 1px solid #686868;
+  border-radius: 2px;
+  padding: 10px 15px;
+  margin: 0 10px 10px 0px;
+  color: #888787;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.title .container .row .right .tag-cloud a:hover {
+  background-color: #4d4d4d;
+  color: #eaeaea;
+}
+/*# sourceMappingURL=blogBanner.css.map */

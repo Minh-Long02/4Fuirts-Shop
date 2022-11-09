@@ -1,0 +1,21 @@
+header .portion-upper {
+  padding: 15px 0 !important;
+}
+
+header .header-middle {
+  -webkit-transform: translate(-50%, 10px);
+          transform: translate(-50%, 10px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .header-middle .icon-home {
+  -webkit-transform: translate(0) !important;
+          transform: translate(0) !important;
+}
+
+header .header-middle .icon-home a {
+  width: 150px !important;
+  height: 150px !important;
+}
+/*# sourceMappingURL=setHeader.css.map */
