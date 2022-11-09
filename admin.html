@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/all.min.css">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="dist/css/admin.css">
+    <link rel="stylesheet" href="dist/css/adminBody.css">
+    <link rel="stylesheet" href="dist/css/adminManagement.css">
+    <link rel="stylesheet" href="dist/css/footer.css">
+    <link rel="stylesheet" href="dist/css/btnScrollTop.css">
+    <link rel="stylesheet" href="dist/css/registerAdmin.css">
+    <link rel="stylesheet" href="dist/css/profileAdmin.css">
+    <title>4Fruits - Super Market</title>
+    <link rel="icon" href="icon/logo3b.png">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="portion-upper">
+                <div class="container">
+                    <div class="header-left">
+                        <nav>
+                            <ul class="wrapper-nav-main">
+                                <li class="nav-main active-nav-main"><a class="nav-link-main" href="">Admin</a></li>
+                                <li class="nav-main"><a class="nav-link-main" href="blog/blog.html">Blog</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-middle">
+                        <div class="icon-home">
+                            <a class="link-icon-home" href="homev1.html"><img src="icon/logo3b.png" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="header-right">
+                        <div class="action-add">
+                            <div class="action-add-icon">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-caret-down"></i>
+                                <div class="dropdown-add">
+                                    <ul class="action-dropdown-add">
+                                        <li><a class="add-new-product" href="#">Add new product</a>
+                                        </li>
+                                        <li><a class="add-new-admin" href="register/register.html">Add new admin</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="facebook icon-info"><i class="fa-brands fa-facebook-f"></i></div>
+                            <div class="twitter icon-info"><i class="fa-brands fa-twitter"></i></div>
+                        </div>
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <div class="form-search">
+                                <input type="text" placeholder="Search...">
+                                <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </div>
+                        <div class="dicor-col"></div>
+                        <div class="user">
+                            <a class="link-login" href="#"><i class="fa-solid fa-user"></i></a>
+                            <div class="dropdown-user">
+                                <ul>
+                                    <li><a class="Profile-admin" href="login/login.html">Your profile</a></li>
+                                    <li><a href="">Logout</a></li>
+                                </ul>
+
+                            </div>
+                            <h5 class="user-name"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="action-scroll">
+        <div class="btn-to-top">
+            <button class="scroll-top">
+                <i class="fa-solid fa-chevron-up"></i>
+            </button>
+        </div>
+    </div>
+    <div class="handle-register">
+        <div class="wrapper-register">
+            <div class="taplist">
+                <button class="btn-login active-form">Register Admin</button>
+            </div>
+            <div class="register similer">
+                <div class="form-register form-similer">
+                    <input type="email" class="register-input error-email" placeholder="Your Email Address*">
+                    <input type="text" class="username-input" placeholder="Adminname*">
+                    <div class="input-show-pass">
+                        <input type="password" class="register-pass" placeholder="Password*">
+                        <button class="show-pass">
+                            <i class="fa-regular fa-eye-slash"></i>
+                        </button>
+                    </div>
+                    <div class="input-show-pass">
+                        <input class="confirm" type="password" placeholder="Confirm*">
+                        <button class="show-pass">
+                            <i class="fa-regular fa-eye-slash"></i>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn-submit">
+                    <a href="" class="go-to-user btn-submit-register">REGISTER</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="handle-profile">
+        <div class="wrapper-profile">
+            <div class="profile">
+                <div class="title">
+                    <h2>Your profile</h2>
+                    <h3>Manage profile information for account security</h3>
+                </div>
+                <div class="wrapper-form-input-info">
+                    <div class="form-input-info email-user">
+                        <h2>Email: </h2>
+                        <input type="eamil" class="input-info input-email">
+
+                    </div>
+                    <div class="form-input-info username-user">
+                        <h2>Username: </h2>
+                        <input type="text" class="input-info input-username">
+
+                    </div>
+                    <div class="form-input-info email-user">
+                        <h2>Password: </h2>
+                        <input type="password" class="input-info input-password"
+                            placeholder="Enter your password to Apply*">
+                    </div>
+                    <div class="btn-action">
+
+                        <button class="btn-change btn-apply">Apply</button>
+                        <button class="btn-change btn-change-password">
+                            Change password
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="backgr">
+            <div class="wrapper-form-password">
+                <div class="btn-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="taplist">
+                    <button class="btn-login active-form">Change Password</button>
+                </div>
+                <div class="change-pass similer">
+                    <div class="form-change-pass form-similer">
+                        <div class="input-show-pass">
+                            <input class="old-pass" type="password" placeholder="Old password*">
+                            <button class="show-pass">
+                                <i class="fa-regular fa-eye-slash"></i>
+                            </button>
+                        </div>
+                        <div class="input-show-pass">
+                            <input class="new-pass" type="password" placeholder="New password*">
+                            <button class="show-pass">
+                                <i class="fa-regular fa-eye-slash"></i>
+                            </button>
+                        </div>
+                        <div class="input-show-pass">
+                            <input class="comfirm-pass" type="password" placeholder="Comfirm password*">
+                            <button class="show-pass">
+                                <i class="fa-regular fa-eye-slash"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <button class="btn-submit">
+                        <a href="" class=" btn-changed-password">CHANGE</a>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="product-page">
+            <div class="products">
+
+                <div class="product-menu">
+                    <div class="wellcome">
+                        <h2>Products</h2>
+                        <p>Edit <strong>Products</strong></p>
+                    </div>
+                    <div class="menu-options">
+                        <nav>
+                            <ul>
+                                <li><span id="menu" class="active" data-category="all"> ALL </span></li>
+                                <li><span id="menu" data-category="dried"> DRIEDS </span></li>
+                                <li><span id="menu" data-category="frozen"> FROZENS </span></li>
+                                <li><span id="menu" data-category="fruit"> FRUITS </span></li>
+                                <li><span id="menu" data-category="organic"> ORGANICS </span></li>
+                                <li><span id="menu" data-category="vegetables"> VEGETABLES </span></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="cards"></div>
+                </div>
+            </div>
+        </div>
+        <div class="admins"></div>
+    </div>
+
+    <div class="admin-input">
+
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-colum">
+                <div class="text-widget">
+                    <p>
+                        <img class="icon-footer" src="/icon/logo3b.png" alt="">
+                    </p>
+                    <p>CÔNG TY TNHH 4FRUITS SUPER MARKET Chuyên Bán Rau Củ Quả Tươi Sạch Mở Bán 24/7.</p>
+                    <p>Giấy CNĐKDN: Công nghệ phần mềm Ngày cấp: 22/08/2022.</p>
+                    <p>Địa chỉ đăng ký kinh doanh: Khu Công nghệ cao TP.HCM (SHTP), Xa lộ Hà Nội, P. Hiệp Phú, TP. Thủ
+                        Đức, TP.HCM, Việt Nam.</p>
+                    <p>Copyright © 4Fruits Super Market . All rights reserved.</p>
+                </div>
+                <ul>
+                    <li>
+
+                        <a href="https://www.facebook.com/profile.php?id=100086445522715">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            Find Us
+                            <span>on Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCfvUNX-XzDVhMLhFbGOoEZQ">
+                            <i class="fa-brands fa-youtube"></i>
+                            Follow Us
+                            <span>on Youtube</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/MiLodabezt">
+                            <i class="fa-brands fa-twitter"></i>
+                            Follow Us
+                            <span>on Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-colum">
+                <div class="tag-cloud">
+                    <h5>Tags Widget</h5>
+                    <a href="">HIKE</a>
+                    <a href="">MARKET</a>
+                    <a href="">RELATED POST</a>
+                </div>
+                <div class="nav-menu">
+                    <h5>Useful Links</h5>
+                    <div class="menu-widget">
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">ABOUT US</a></li>
+                            <li><a href="./blog/blog.html">BLOG</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100086445522715">CONTACT US</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100049305734853">FARMERS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-colum">
+                <div class="widget-title">
+                    <h5>Contact Info</h5>
+                </div>
+                <div class="widget-text">
+                    <h3>Office:</h3>
+                    <p>345 Tran Xuan Soan St, Tan Kieng EZ, District 7, Ho Chi Minh City, Vietnam.
+                    </p>
+                    <h4>Phone Number</h4>
+                    <p>0912646816(Mr.Đạt)</p>
+                    <p>0964962067(Mr.Hùng)</p>
+                    <h4>Email Address</h4>
+                    <p>datdang3007@gmail.com</p>
+                    <p>sieuxau50@gmail.com</p>
+                    <p>nguyencuutinh2002@gmail.com</p>
+                    <p>vominhlong25112002@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="footer-left">
+                    <p>© <a href="">VEGGIE </a>made with love by <a href="">0effortthemes</a></p>
+                </div>
+                <div class="footer-right">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100086445522715">ABOUT</a></li>
+                        <li><a href="./blog/blog.html">BLOG</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100049305734853">FARMERS</a></li>
+                        <li><a href="">TEMPLATES</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="admin/admin.js"></script>
+<script src="admin/registerAdmin.js"></script>
+<script src="admin/profileAdmin.js"></script>
+
+</html>

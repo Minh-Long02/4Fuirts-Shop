@@ -1,0 +1,240 @@
+.background-banner {
+  video {
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    top: 0;
+    height: flex;
+    z-index: 0;
+  }
+}
+.banner {
+  padding-top: 116px;
+  position: relative;
+  z-index: 10;
+  .banner-upper {
+    padding: 100px 0 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .logo-banner {
+      margin-bottom: 50px;
+    }
+    .decor-banner {
+      transform: translateX(10px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .barley-left {
+        margin-right: 30px;
+        transform: translateX(-10px);
+        img {
+          transform: matrix3d(
+            0.98,
+            0.2,
+            0,
+            0,
+            -0.2,
+            0.98,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          );
+          transform-origin: 0% 100% 0px;
+          animation: barley-left 2.5s infinite alternate ease-out;
+        }
+      }
+      .barley-right {
+        img {
+          transform: matrix3d(
+            0.96,
+            -0.2,
+            0,
+            0,
+            0.2,
+            0.96,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          );
+          transform-origin: 0% 100% 0px;
+          animation: barley-left 2.5s infinite alternate ease-out;
+        }
+      }
+      .caption {
+        text-align: center;
+        h3 {
+          font-size: 28px;
+          font-weight: 100;
+          color: #ffffff;
+          transform: translateX(-20px);
+        }
+      }
+    }
+  }
+  .banner-below {
+    background-color: #ffffff;
+    padding-top: 50px;
+    .wellcome {
+      margin: 10px 10px 40px;
+      p {
+        font-size: 24px;
+        font-weight: 200;
+        color: #666666;
+      }
+      h2 {
+        font-size: 60px;
+        font-weight: 200;
+        color: #666666;
+      }
+    }
+    .wrapper-banner {
+      padding-bottom: 100px;
+      display: grid;
+      overflow: hidden;
+      grid-template-columns: repeat(3, 1fr);
+      .wrapper-fruit {
+        opacity: 0;
+        visibility: hidden;
+        max-height: 800px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        max-width: 370px;
+        background-color: #f7f6f2;
+        margin: 0 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .content-fruit {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .icon-fruit {
+            margin: 40px 0 20px;
+            width: 70px;
+            height: 70px;
+          }
+          .categories {
+            text-align: center;
+            overflow: hidden;
+            .wrapper-text {
+              transform: translateX(100%);
+              h3 {
+                margin: 0 auto;
+                font-family: "Berkshire Swash", cursive;
+                font-size: 50px;
+                font-weight: 400;
+                color: #222222;
+              }
+            }
+          }
+          .fruit-content {
+            margin: 20px 0 0;
+            text-align: center;
+            p {
+              font-size: 13px;
+              color: #666666;
+            }
+          }
+        }
+        .illustration {
+          transform: translateY(40px);
+          width: 100%;
+          bottom: 0;
+          left: 0;
+          img {
+            width: 100%;
+            animation: banner-below 1.5s infinite alternate;
+          }
+        }
+      }
+      :nth-child(2) {
+        .illustration {
+          img {
+            width: 120%;
+          }
+        }
+      }
+    }
+    .action-banner-1 {
+      animation: move-up 0.5s 0.5s linear forwards,
+        show 0s linear 0.5s alternate forwards;
+      .wrapper-text {
+        animation: move 1s linear 1.5s forwards;
+      }
+      .hide {
+        opacity: 0;
+        visibility: hidden;
+        animation: show 1s linear 1.5s alternate forwards;
+      }
+    }
+    .action-banner-2 {
+      animation: move-up 0.5s linear 1s forwards,
+        show 0s linear 1s alternate forwards;
+      .wrapper-text {
+        animation: move 1s linear 2s forwards;
+      }
+      .hide {
+        opacity: 0;
+        visibility: hidden;
+        animation: show 1s linear 2s alternate forwards;
+      }
+    }
+    .action-banner-3 {
+      animation: move-up 0.5s linear 1.5s forwards,
+        show 0s linear 1.5s alternate forwards;
+      .wrapper-text {
+        animation: move 1s linear 2.5s forwards;
+      }
+      .hide {
+        opacity: 0;
+        visibility: hidden;
+        animation: show 1s linear 2.5s alternate forwards;
+      }
+    }
+  }
+}
+@keyframes barley-left {
+  to {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+}
+@keyframes banner-below {
+  to {
+    transform: translateY(20px);
+  }
+}
+@keyframes move {
+  to {
+    transform: translate(0);
+  }
+}
+@keyframes move-up {
+  from {
+    transform: translateY(50%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+@keyframes show {
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
